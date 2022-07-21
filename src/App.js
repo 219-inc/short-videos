@@ -8,6 +8,7 @@ export default function App() {
       <Text style={tw`font-bold text-lg`}>🌟 This is a short video consuming app 🦑</Text>
       <TouchableOpacity style={tw`border-blue-300`}>
         <Text>Hello World 🙌</Text>
+        <Text>Another Text</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
