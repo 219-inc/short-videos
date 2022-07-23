@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import tw from 'twrnc'
 
 export default function App() {
