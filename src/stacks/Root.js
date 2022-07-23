@@ -4,11 +4,11 @@ import { Auth, Hub } from "aws-amplify";
 import { ActivityIndicator, View } from "react-native";
 import tw from 'twrnc'
 
-import Login from "screen/Login";
-import SignUp from "screen/SignupScreen";
-import ConfirmEmail from "screen/ConfirmEmail";
-import ForgotPassword from 'screen/ForgotPassword';
-import ChangePassword from 'screen/ChangePassword';
+import Login from "screen/Authentication/Login";
+import SignUp from "screen/Authentication/SignupScreen";
+import ConfirmEmail from "screen/Authentication/ConfirmEmail";
+import ForgotPassword from 'screen/Authentication/ForgotPassword';
+import ChangePassword from 'screen/Authentication/ChangePassword';
 import Home from "screen/Home";
 
 const Stack = createStackNavigator();
