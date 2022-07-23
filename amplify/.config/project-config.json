@@ -10,7 +10,7 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "/",
-      "BuildCommand": "expo start --tunnel",
+      "BuildCommand": "npm.cmd run-script build",
       "StartCommand": "expo start --tunnel"
     }
   }

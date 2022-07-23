@@ -10,6 +10,11 @@
       "StackName": "amplify-shortvideos-staging-61248",
       "StackId": "arn:aws:cloudformation:ap-south-1:551961123650:stack/amplify-shortvideos-staging-61248/7a3e3f20-0a4e-11ed-b45a-062eda2cad00",
       "AmplifyAppId": "dvjwy9ao07i31"
+    },
+    "categories": {
+      "auth": {
+        "shortvideos": {}
+      }
     }
   }
 }
