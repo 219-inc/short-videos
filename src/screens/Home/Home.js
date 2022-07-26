@@ -1,14 +1,16 @@
-import { View, Text, TouchableOpacity } from 'react-native'
-import {Auth} from 'aws-amplify'
+import { View, Button, Text } from 'react-native'
 import tw from 'twrnc'
+import {Auth} from 'aws-amplify'
+
+import TopNav from 'component/TopNav'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-      <TouchableOpacity onPress={async () => await Auth.signOut()}>
-        <Text style={tw`text-lg text-red-400`}>Sign Out</Text>
-      </TouchableOpacity>
+    <View style={tw`pt-12`}>
+      <TopNav /> 
+      <View style={tw`mt-12 bg-black`}>
+        <Button onPress={() => Auth.signOut()} title={"Sign Out"}/>
+      </View>
     </View>
   )
 }

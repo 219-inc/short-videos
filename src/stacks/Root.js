@@ -9,6 +9,8 @@ import SignUp from "screen/Authentication/SignupScreen";
 import ConfirmEmail from "screen/Authentication/ConfirmEmail";
 import ForgotPassword from 'screen/Authentication/ForgotPassword';
 import ChangePassword from 'screen/Authentication/ChangePassword';
+
+import HomeStack from "./Home";
 import Home from "screen/Home";
 
 const Stack = createStackNavigator();
@@ -51,7 +53,7 @@ export default function Root() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             {user ? (
-                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="HomeStack" component={HomeStack} />
             ) : (
                 <>
                     <Stack.Screen name="SignIn" component={Login} />
